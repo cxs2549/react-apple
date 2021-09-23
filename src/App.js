@@ -1,8 +1,12 @@
+import Header from "./components/Header/Header"
+
 const App = () => {
   return (
-    <div>
-      fresh
-    </div>
+    <>
+      <Header />
+      <main className="h-screen bg-white"></main>
+      <footer className="h-40 bg-blue-300"></footer>
+    </>
   )
 }
 
