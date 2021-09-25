@@ -25,6 +25,7 @@ const Search = ({ click }) => {
 			<div className="relative flex items-center h-full">
 				<input
 					type="search"
+					id="searchNav"
 					placeholder="Search apple.com"
 					className="w-full h-10 rounded pl-8 pr-8 focus:outline-none bg-gray-800 text-gray-200"
 				/>

@@ -10,27 +10,28 @@ import Headroom from 'react-headroom'
 import Search from './Search/Search'
 import { CSSTransition } from 'react-transition-group'
 import Bag from './Bag/Bag'
+import links from '../../store/store'
 
 const StyledHeader = styled.header`
 	background-color: #101010;
-	color: ${(props) => (props.search ? 'black' : 'white')};
-	transition: color 1.25s;
+	color: white;
 	.my-node-enter {
 		opacity: 0;
 	}
 	.my-node-enter-active {
 		opacity: 1;
-		transition: opacity 600ms;
-		transition-delay: 200ms;
+		transition: all 300ms;
+		/* transition-delay: 200ms; */
 	}
 	.my-node-exit {
 		opacity: 1;
 	}
 	.my-node-exit-active {
 		opacity: 0;
-		transition: opacity 600ms;
+		transition: all 200ms;
 	}
 `
+
 const Header = () => {
 	const [ isOpen, setOpen ] = useState(false)
 	const [ showSearch, setShowSearch ] = useState(false)
@@ -44,9 +45,36 @@ const Header = () => {
 		setOpen(false)
 		document.body.classList.remove('freeze-flow')
 	}
-	const links = [ 'Store', 'Mac', 'iPad', 'iPhone', 'Watch', 'TV', 'Music', 'Support' ]
+	const handleShowSearch = () => {
+		document.getElementById('logo').classList.add('opacity-0')
+		document.getElementById('logo').classList.remove('opacity-75')
+		document.getElementById('links').classList.add('opacity-0')
+		document.getElementById('links').classList.remove('opacity-75')
+		document.getElementById('bagSearchContainer').classList.add('text-black')
+		setShowSearch(!showSearch)
+	}
+	const handleCloseSearch = () => {
+		document.getElementById('logo').classList.remove('opacity-0')
+		document.getElementById('logo').classList.add('opacity-75')
+		document.getElementById('links').classList.remove('opacity-0')
+		document.getElementById('links').classList.add('opacity-75')
+		document.getElementById('bagSearchContainer').classList.remove('text-black')
+
+		setShowSearch(false)
+	}
+	const handleShowBag = () => {
+		setShowBag(!showBag)
+		document.getElementById('baggy').classList.toggle('-rotate-45')
+	}
+	const handleCloseBag = () => {
+		setShowBag(false)
+		document.getElementById('baggy').classList.remove('-rotate-45')
+	}
+
 	const menuRef = useRef()
+	const bagRef = useRef()
 	useOnClickOutside(menuRef, handleClose)
+	useOnClickOutside(bagRef, handleCloseBag)
 	return (
 		<Headroom>
 			<StyledHeader className="h-12" search={showSearch}>
@@ -57,27 +85,38 @@ const Header = () => {
 					</div>
 					<Logo />
 					<Links links={links} />
-					<div className="flex items-center gap-10 md:gap-12 xl:gap-16 opacity-80">
+					<div
+						id="bagSearchContainer"
+						className="flex items-center gap-10 md:gap-12 xl:gap-16  transition-colors duration-300"
+					>
 						<div
 							className="hidden md:block transform translate-y-1 mb-1 cursor-pointer"
-							onClick={() => setShowSearch(!showSearch)}
+							onClick={handleShowSearch}
 						>
-							<BsSearch size="1.16em" />
+							<BsSearch
+								size="1.16em"
+								className="opacity-75 hover:opacity-100 transition-opacity duration-300"
+							/>
 						</div>
 						<CSSTransition
 							unmountOnExit
 							in={showSearch}
-							timeout={600}
+							timeout={300}
 							classNames="my-node"
 						>
-							<Search click={() => setShowSearch(false)} />
+							<Search click={handleCloseSearch} />
 						</CSSTransition>
-						<div className="relative">
-							<BsBag size="1.32em" onClick={() => setShowBag(!showBag)} />
+						<div className="relative" ref={bagRef}>
+							<BsBag
+								id="baggy"
+								size="1.32em"
+								onClick={handleShowBag}
+								className="transform opacity-75 hover:opacity-100 transition-all duration-300"
+							/>
 							<CSSTransition
 								unmountOnExit
 								in={showBag}
-								timeout={600}
+								timeout={300}
 								classNames="my-node"
 							>
 								<Bag />
