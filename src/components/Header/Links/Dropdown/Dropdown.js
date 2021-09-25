@@ -7,6 +7,7 @@ const StyledDropdown = styled.div`
 	right: 0;
 	/* height: 130px; */
 	width: 100%;
+	opacity: .98;
 	color: ${props => (props.text || '#333')};
 	img {
 		min-width: ${(props) => props.width || '120px'};
@@ -25,7 +26,7 @@ const StyledDropdown = styled.div`
 const Dropdown = ({ images, width, background, text, invert }) => {
 	return (
 		<StyledDropdown
-			className={`border-b bg-${background} bg-opacity-70`}
+			className={` bg-${background}`}
 			width={width}
 			text={text}
 			invert={invert}

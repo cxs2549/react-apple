@@ -94,7 +94,9 @@ const links = [
 			{ image: storeCard4, title: 'apple TV' },
 			{ image: storeCard5, title: 'homePod' },
 			{ image: storeCard1, title: 'accessories' }
-		]
+		],
+        background: 'white',
+
 	},
 	{
 		name: 'Mac',
@@ -128,6 +130,8 @@ const links = [
 			{ image: iphoneCard12, title: 'big sur"' }
 		],
 		width: '20px',
+        background: 'white',
+
 	},
 	{
 		name: 'iPad',
@@ -165,6 +169,8 @@ const links = [
 			{ image: watchCard14, title: 'big sur"' },
 		],
 		width: '20px',
+        background: 'white',
+
 	},
 	{
 		name: 'TV',
