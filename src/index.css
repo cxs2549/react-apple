@@ -2,38 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scrollbar-width: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scrollbar-width: none;
 }
 
 :root {
-  --brandBlue: rgb(0, 102, 204);
+	--brandBlue: rgb(0, 102, 204);
 }
 
 #root {
-  /* overflow-x: hidden; */
-/* max-width: 100vh; */
+	/* overflow-x: hidden; */
+	/* max-width: 100vh; */
 }
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: white;
-  background-color: #000;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+		'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: white;
+	background-color: #000;
 }
 
 .freeze-flow {
-  overflow: hidden;
+	overflow: hidden;
 }
 
-svg, img {
-  cursor: pointer;
+svg,
+img {
+	cursor: pointer;
 }
 
+h1 {
+	font-size: 200%;
+	margin: 0;
+	@media (min-width: 768px) {
+		font-size: 300%;
+	}
+	@media (min-width: 1024px) {
+		font-size: 350%;
+	}
+}
 
+button {
+	display: flex;
+	align-items: center;
+	gap: .25rem;
+	color: var(--brandBlue);
+	svg {
+		margin-top: 3px;
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 768px) {
+	h1 {
+		font-size: 300%;
+	}
+}
