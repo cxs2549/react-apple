@@ -6,7 +6,6 @@ const StyledDropdown = styled.div`
 	left: 50%;
 	transform: translateX(-50%);
 	width: 90%;
-	opacity: .98;
 	color: ${(props) => props.text || '#333'};
 	border-bottom-right-radius: 11px;
 	border-bottom-left-radius: 11px;
