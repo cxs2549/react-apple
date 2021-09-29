@@ -43,7 +43,7 @@ const Bag = () => {
 				{links.map((link, i) => (
 					<li
 						key={i}
-						className="border-b text-blue-700 hover:text-blue-400 py-3 text-sm font-medium cursor-pointer transition-colors duration-300"
+						className="border-b text-brandBlue hover:text-blue-400 py-3 text-sm font-medium cursor-pointer transition-colors duration-300"
 					>
 						{link.name}
 					</li>
