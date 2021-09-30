@@ -1,16 +1,23 @@
 import styled from 'styled-components'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
+import {AiOutlineDown} from 'react-icons/ai'
 
 const StyledItem = styled.li``
 const Item = ({ title, items }) => {
 	const [ isOpen, setIsOpen ] = useState(false)
 
+	const handleOpen = () => {
+		setIsOpen(!isOpen)
+		arrowRef.current.classList.toggle('rotate-180')
+	}
+
+	const arrowRef = useRef()
 	return (
-		<StyledItem className="py-3 border-b md:border-b-0 cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
+		<StyledItem className="py-3 border-b md:border-b-0 cursor-pointer" onClick={handleOpen}>
 			<div className="flex items-center justify-between ">
 				<h4 className="text-gray-700">{title}</h4>
-				<div className="md:hidden">
-					<i class="fa fa-plus" aria-hidden="true" />
+				<div className="md:hidden transform transition-transform duration-100" ref={arrowRef}>
+					<AiOutlineDown />
 				</div>
 			</div>
 			{isOpen && (

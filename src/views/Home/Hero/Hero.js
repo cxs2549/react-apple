@@ -1,32 +1,28 @@
 import styled from 'styled-components'
-import heroSm from '../../../assets/hero/hero-sm.png'
-import heroMdFlat from '../../../assets/hero/hero-md-flat.png'
-import heroLg from '../../../assets/hero/hero-lg.png'
 import HeroText from './HeroText/HeroText'
 
 const StyledHero = styled.div`
 	overflow: hidden;
-	background-color: #f2f3f5;
+	/* background-color: ${(props) => props.bg || 'white'}; */
 	@media (min-width: 768px) {
-		background-color: #fafafc;
+		/* background-color: #fafafc; */
 	}
 	@media (min-width: 1024px) {
-		background-color: #f2f3f5;
-		height: calc(100vh - 48px);
+		/* height: calc(90vh - 48px); */
 	}
 	@media (min-width: 1280px) {
+		background-color: ${props => (props.xlBg || 'white')};
 	}
 	img {
-		object-fit: contain;
-		max-width: 85%;
+		object-fit: cover;
+		min-height: 376px;
 		@media (min-width: 768px) {
-			max-height: 50%;
+			min-height: 400px;
+			max-height: 400px;
 			object-fit: contain;
-			transform: scale(1.3);
-			object-position: -80px 0;
 		}
 		@media (min-width: 1024px) {
-			object-fit: cover;
+			object-fit: contain;
 			object-position: center top;
 			height: 100%;
 			min-width: 500px;
@@ -34,17 +30,32 @@ const StyledHero = styled.div`
 			min-height: 470px;
 			transform: scale(1);
 		}
+		@media (min-width: 1280px) {
+			max-height: 312px;
+			min-height: 312px;
+			object-fit: contain;
+			object-position: center center;
+			max-width: auto;
+			min-width: 500px;
+		}
 	}
-	
-	
 `
-const Hero = () => {
+const Hero = ({ sm, md, lg, bg, title, subtitle, h1Color, subColor, resize, left, xlBg }) => {
 	return (
-		<StyledHero className="flex flex-col gap-y-5 md:gap-y-32 lg:gap-y-20 items-center  pt-7 md:pt-12 lg:pt-7 ">
-			<HeroText title="iPhone 13 Pro" subtitle="Oh. So. Pro." />
-			<img src={heroSm} alt="" className=" md:hidden ml-auto" />
-			<img src={heroMdFlat} alt="" className="hidden md:block lg:hidden  ml-auto" />
-			<img src={heroLg} alt="" className="hidden lg:block" />
+		<StyledHero
+			className="flex flex-col justify-between gap-8 md:gap-8  items-center  pt-8"
+			bg={bg}
+			resize={resize}
+			xlBg={xlBg}
+		>
+			<HeroText title={title} subtitle={subtitle} h1Color={h1Color} subColor={subColor} />
+			<img src={sm} alt="" className={`md:hidden ${left ? 'ml-auto' : ''} ml-auto`} />
+			<img
+				src={md}
+				alt=""
+				className={`hidden md:block lg:hidden  ${left ? 'ml-auto' : ''}`}
+			/>
+			<img src={lg} alt="" className="hidden lg:block" />
 		</StyledHero>
 	)
 }

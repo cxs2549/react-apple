@@ -26,25 +26,22 @@ const StyledDropdown = styled.div`
 
 const Dropdown = ({ images, width, background, text, invert }) => {
 	return (
-		<StyledDropdown className={` bg-${background} max-w-5xl`} width={width} text={text} invert={invert}>
-			<div className="flex flex-wrap gap-8 gap-y-12 items-center  max-w-7xl mx-auto px-4 py-8 justify-center  overflow-x-scroll">
+		<StyledDropdown className={` bg-${background} max-w-5xl  shadow`} width={width} text={text} invert={invert}>
+			<div className="flex flex-wrap gap-8 gap-y-12 items-center  max-w-7xl mx-auto px-4 py-4 justify-center  overflow-x-scroll">
 				{images.map((image, i) => (
 					<div
 						id="card"
 						key={i}
-						className="flex flex-col items-center justify-between gap-3  px-4 py-0 hover:shadow rounded-lg hover:border"
+						className="flex flex-col items-center justify-between gap-3  px-8 py-4 hover:shadow rounded-lg hover:border cursor-pointer"
 					>
 						<img
 							src={image.image}
 							className=" transition-opacity duration-300 "
 							alt=""
 						/>
-						<h4 className="capitalize whitespace-nowrap text-xs">{image.title}</h4>
+						<h4 className=" whitespace-nowrap text-xs">{image.title}</h4>
 					</div>
 				))}
-			</div>
-			<div className="flex items-center justify-center py-5">
-				<span className="mx-auto border-b border-brandBlue font-medium">View All</span>
 			</div>
 		</StyledDropdown>
 	)

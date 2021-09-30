@@ -27,6 +27,11 @@ body {
 	background-color: #000;
 }
 
+main {
+	position: relative;
+	z-index: 0;
+}
+
 .freeze-flow {
 	overflow: hidden;
 }
@@ -53,7 +58,7 @@ button {
 	gap: .25rem;
 	color: var(--brandBlue);
 	svg {
-		margin-top: 3px;
+		margin-top: 2.5px;
 		font-size: 14px;
 	}
 }

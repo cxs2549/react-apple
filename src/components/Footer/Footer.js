@@ -35,7 +35,7 @@ const Footer = () => {
 					automatically renews until cancelled. Restrictions and other terms apply.
 				</p>
 				<Accordion />
-				<p className="mb-4">
+				<p className="mb-4 text-center pt-2">
 					More ways to shop: <span className="text-brandBlue">
 						Find an Apple Store
 					</span>{' '}

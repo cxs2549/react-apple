@@ -85,70 +85,68 @@ const links = [
 	{
 		name: 'Store',
 		images: [
-			{ image: storeCard8, title: 'mac' },
+			{ image: storeCard8, title: 'Mac' },
 			{ image: storeCard7, title: 'iPhone' },
 			{ image: storeCard6, title: 'iPad' },
-			{ image: storeCard9, title: 'apple watch' },
-			{ image: storeCard2, title: 'airPods' },
-			{ image: storeCard3, title: 'airTags' },
-			{ image: storeCard4, title: 'apple TV' },
-			{ image: storeCard5, title: 'homePod' },
-			{ image: storeCard1, title: 'accessories' }
+			{ image: storeCard9, title: 'Watch' },
+			{ image: storeCard2, title: 'AirPods' },
+			{ image: storeCard3, title: 'AirTags' },
+			{ image: storeCard4, title: 'Apple TV' },
+			{ image: storeCard5, title: 'HomePod' },
+			{ image: storeCard1, title: 'Accessories' }
 		],
-        background: 'white',
-
+		background: 'white'
 	},
 	{
 		name: 'Mac',
 		images: [
-			{ image: macCard6, title: 'macBook air' },
-			{ image: macCard7, title: 'macBook pro 13"' },
-			{ image: macCard8, title: 'macBook pro 16"' },
+			{ image: macCard6, title: 'MacBook Air' },
+			{ image: macCard7, title: 'MacBook Pro 13"' },
+			{ image: macCard8, title: 'MacBook Pro 16"' },
 			{ image: macCard2, title: 'iMac 24"' },
 			{ image: macCard3, title: 'iMac 27"' },
-			{ image: macCard5, title: 'mac pro' },
-			{ image: macCard1, title: 'accessories' },
-			{ image: macCard4, title: 'big sur"' }
+			{ image: macCard5, title: 'Mac Pro' },
+			{ image: macCard1, title: 'Accessories' },
+			{ image: macCard4, title: 'Big Sur' }
 		],
 		width: '40px',
-        background: 'gray-200',
+		background: 'gray-200'
 	},
 	{
 		name: 'iPhone',
 		images: [
-			{ image: iphoneCard1, title: 'macBook air' },
-			{ image: iphoneCard2, title: 'macBook pro 13"' },
-			{ image: iphoneCard3, title: 'macBook pro 16"' },
-			{ image: iphoneCard4, title: 'iMac 24"' },
-			{ image: iphoneCard5, title: 'iMac 27"' },
-			{ image: iphoneCard6, title: 'mac pro' },
-			{ image: iphoneCard7, title: 'accessories' },
-			{ image: iphoneCard8, title: 'big sur"' },
-			{ image: iphoneCard9, title: 'big sur"' },
-			{ image: iphoneCard10, title: 'big sur"' },
-			{ image: iphoneCard11, title: 'big sur"' },
-			{ image: iphoneCard12, title: 'big sur"' }
+			{ image: iphoneCard1, title: 'AirPods' },
+			{ image: iphoneCard2, title: 'AirTags' },
+			{ image: iphoneCard3, title: 'Accessories' },
+			{ image: iphoneCard4, title: 'iPhone 11' },
+			{ image: iphoneCard5, title: 'iPhone 13' },
+			{ image: iphoneCard6, title: 'iPhone 13 Pro' },
+			{ image: iphoneCard7, title: 'Apple Card' },
+			{ image: iphoneCard8, title: 'Compare' },
+			{ image: iphoneCard9, title: 'iOS 15' },
+			{ image: iphoneCard10, title: 'iPhone SE' },
+			{ image: iphoneCard11, title: 'iPhone 12' },
+			{ image: iphoneCard12, title: 'Shop iPhone' }
 		],
 		width: '20px',
-        background: 'white',
-
+		background: 'white'
 	},
 	{
 		name: 'iPad',
 		images: [
-			{ image: ipadCard1, title: 'macBook air' },
-			{ image: ipadCard3, title: 'macBook pro 16"' },
-			{ image: ipadCard4, title: 'iMac 24"' },
-			{ image: ipadCard5, title: 'iMac 27"' },
-			{ image: ipadCard6, title: 'mac pro' },
-			{ image: ipadCard7, title: 'accessories' },
-			{ image: ipadCard8, title: 'big sur"' },
-			{ image: ipadCard9, title: 'big sur"' },
-			{ image: ipadCard10, title: 'big sur"' },
-			{ image: ipadCard11, title: 'big sur"' },
+			{ image: ipadCard1, title: 'AirPods' },
+			{ image: ipadCard3, title: 'Accessories' },
+			{ image: ipadCard4, title: 'Compare' },
+			{ image: ipadCard5, title: 'iPad mini' },
+			{ image: ipadCard6, title: 'iPad Air' },
+			{ image: ipadCard7, title: 'iPad mini' },
+			{ image: ipadCard8, title: 'iPadOS' },
+			{ image: ipadCard9, title: 'iPad Pro' },
+			{ image: ipadCard10, title: 'Keyboards' },
+			{ image: ipadCard11, title: 'Shop iPads' }
 		],
 		width: '20px',
-        background: 'gray-300'
+		background: 'gray-300'
 	},
 	{
 		name: 'Watch',
@@ -166,11 +164,10 @@ const links = [
 			{ image: watchCard11, title: 'big sur"' },
 			{ image: watchCard12, title: 'big sur"' },
 			{ image: watchCard13, title: 'big sur"' },
-			{ image: watchCard14, title: 'big sur"' },
+			{ image: watchCard14, title: 'big sur"' }
 		],
 		width: '20px',
-        background: 'white',
-
+		background: 'white'
 	},
 	{
 		name: 'TV',
@@ -180,12 +177,11 @@ const links = [
 			{ image: tvCard3, title: 'macBook pro 16"' },
 			{ image: tvCard4, title: 'iMac 24"' },
 			{ image: tvCard5, title: 'iMac 27"' },
-			{ image: tvCard6, title: 'mac pro' },
-		
+			{ image: tvCard6, title: 'mac pro' }
 		],
 		width: '40px',
-        background: 'gray-400',
-        invert: true
+		background: 'gray-400',
+		invert: true
 	},
 	{
 		name: 'Music',
@@ -199,12 +195,11 @@ const links = [
 			{ image: musicCard8, title: 'mac pro' },
 			{ image: musicCard9, title: 'mac pro' },
 			{ image: musicCard10, title: 'mac pro' },
-			{ image: musicCard11, title: 'mac pro' },
-		
+			{ image: musicCard11, title: 'mac pro' }
 		],
 		width: '20px',
-        background: 'gray-700',
-        text: 'white'
+		background: 'gray-700',
+		text: 'white'
 	},
 	{
 		name: 'Support',
@@ -214,14 +209,13 @@ const links = [
 			{ image: supportCard3, title: 'macBook pro 16"' },
 			{ image: supportCard4, title: 'iMac 24"' },
 			{ image: supportCard5, title: 'iMac 27"' },
-			{ image: supportCard7, title: 'mac pro' },
-		
+			{ image: supportCard7, title: 'mac pro' }
 		],
 		width: '20px',
-        background: 'gray-500',
-        text: 'white',
-        invert: true
-	},
+		background: 'gray-500',
+		text: 'white',
+		invert: true
+	}
 
 	// [ 'Watch', '', '30px', 'gray-300' ],
 	// [ 'TV', '', '30px', 'gray-300' ],
