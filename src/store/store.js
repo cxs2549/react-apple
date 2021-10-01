@@ -137,7 +137,7 @@ const links = [
 			{ image: ipadCard1, title: 'AirPods' },
 			{ image: ipadCard3, title: 'Accessories' },
 			{ image: ipadCard4, title: 'Compare' },
-			{ image: ipadCard5, title: 'iPad mini' },
+			{ image: ipadCard5, title: 'iPad' },
 			{ image: ipadCard6, title: 'iPad Air' },
 			{ image: ipadCard7, title: 'iPad mini' },
 			{ image: ipadCard8, title: 'iPadOS' },
@@ -151,20 +151,19 @@ const links = [
 	{
 		name: 'Watch',
 		images: [
-			{ image: watchCard1, title: 'macBook air' },
-			{ image: watchCard2, title: 'macBook air' },
-			{ image: watchCard3, title: 'macBook pro 16"' },
-			{ image: watchCard4, title: 'iMac 24"' },
-			{ image: watchCard5, title: 'iMac 27"' },
-			{ image: watchCard6, title: 'mac pro' },
-			{ image: watchCard7, title: 'accessories' },
-			{ image: watchCard8, title: 'big sur"' },
-			{ image: watchCard9, title: 'big sur"' },
-			{ image: watchCard10, title: 'big sur"' },
-			{ image: watchCard11, title: 'big sur"' },
-			{ image: watchCard12, title: 'big sur"' },
-			{ image: watchCard13, title: 'big sur"' },
-			{ image: watchCard14, title: 'big sur"' }
+			{ image: watchCard1, title: 'Accessories' },
+			{ image: watchCard3, title: 'Bands' },
+			{ image: watchCard4, title: 'Compare' },
+			{ image: watchCard5, title: 'Apple Fitness+' },
+			{ image: watchCard6, title: 'Apple Watch Hermes' },
+			{ image: watchCard7, title: 'Apple Watch Nike' },
+			{ image: watchCard8, title: 'Apple Watch Series 6' },
+			{ image: watchCard9, title: 'Apple Watch SE' },
+			{ image: watchCard10, title: 'Apple Watch Studio' },
+			{ image: watchCard11, title: 'Apple Watch Series 3' },
+			{ image: watchCard13, title: 'Compare' },
+			{ image: watchCard14, title: 'watchOS' },
+			{ image: watchCard12, title: 'Shop Watch' },
 		],
 		width: '20px',
 		background: 'white'
@@ -172,12 +171,12 @@ const links = [
 	{
 		name: 'TV',
 		images: [
-			{ image: tvCard1, title: 'macBook air' },
-			{ image: tvCard2, title: 'macBook air' },
-			{ image: tvCard3, title: 'macBook pro 16"' },
-			{ image: tvCard4, title: 'iMac 24"' },
-			{ image: tvCard5, title: 'iMac 27"' },
-			{ image: tvCard6, title: 'mac pro' }
+			{ image: tvCard1, title: 'Apple TV 4K' },
+			{ image: tvCard2, title: 'Accessories'},
+			{ image: tvCard3, title: 'AirPlay' },
+			{ image: tvCard4, title: 'Apple TV App' },
+			{ image: tvCard5, title: 'Apple TV HD' },
+			{ image: tvCard6, title: 'Apple TV+' }
 		],
 		width: '40px',
 		background: 'gray-400',
@@ -186,16 +185,16 @@ const links = [
 	{
 		name: 'Music',
 		images: [
-			{ image: musicCard1, title: 'macBook air' },
-			{ image: musicCard2, title: 'macBook air' },
-			{ image: musicCard3, title: 'macBook pro 16"' },
-			{ image: musicCard4, title: 'iMac 24"' },
-			{ image: musicCard5, title: 'iMac 27"' },
-			{ image: musicCard7, title: 'mac pro' },
-			{ image: musicCard8, title: 'mac pro' },
-			{ image: musicCard9, title: 'mac pro' },
-			{ image: musicCard10, title: 'mac pro' },
-			{ image: musicCard11, title: 'mac pro' }
+			{ image: musicCard1, title: 'AirPods' },
+			{ image: musicCard2, title: 'AirPods Max' },
+			{ image: musicCard3, title: 'AirPods Pro' },
+			{ image: musicCard4, title: 'Apple Music' },
+			{ image: musicCard5, title: 'Beats' },
+			{ image: musicCard7, title: 'Apple Card' },
+			{ image: musicCard8, title: 'HomePod' },
+			{ image: musicCard9, title: 'HomePod mini' },
+			{ image: musicCard10, title: 'iPod touch' },
+			{ image: musicCard11, title: 'Music Accessories' }
 		],
 		width: '20px',
 		background: 'gray-700',
@@ -204,12 +203,12 @@ const links = [
 	{
 		name: 'Support',
 		images: [
-			{ image: supportCard1, title: 'macBook air' },
-			{ image: supportCard2, title: 'macBook air' },
-			{ image: supportCard3, title: 'macBook pro 16"' },
-			{ image: supportCard4, title: 'iMac 24"' },
-			{ image: supportCard5, title: 'iMac 27"' },
-			{ image: supportCard7, title: 'mac pro' }
+			{ image: supportCard5, title: 'iPhone' },
+			{ image: supportCard1, title: 'Mac' },
+			{ image: supportCard4, title: 'iPad' },
+			{ image: supportCard3, title: 'Watch' },
+			{ image: supportCard2, title: 'Music' },
+			{ image: supportCard7, title: 'TV' }
 		],
 		width: '20px',
 		background: 'gray-500',
